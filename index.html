@@ -4,7 +4,14 @@
 // Firebase 설정: Firebase 콘솔 > 프로젝트 설정 > 내 앱 > 웹 앱 구성에서 복사하세요.
 // Realtime Database를 생성하고 databaseURL까지 채워야 실시간 연결됩니다.
 const firebaseConfig = {
-  apiKey: "", authDomain: "", databaseURL: "", projectId: "", appId: ""
+  apiKey: "AIzaSyDOxxb9Izj6b7H4ESF2Us-0tIVsJ9O8yfE",
+  authDomain: "sky-fold-37fd5.firebaseapp.com",
+  databaseURL: "",
+  projectId: "sky-fold-37fd5",
+  storageBucket: "sky-fold-37fd5.firebasestorage.app",
+  messagingSenderId: "414727331490",
+  appId: "1:414727331490:web:40635dbffa217693d281fb",
+  measurementId: "G-YSV54129VZ"
 };
 const $=id=>document.getElementById(id), canvas=$('sky'),ctx=canvas.getContext('2d');
 let W=0,H=0, scale=1, lastFrame=performance.now(), mode='idle',flight=null,particles=[],clouds=[],obstacles=[],wind=0,windTarget=0,windTimer=0,roomCode='',db=null,unsub=null,clientId=crypto.randomUUID?.()||Math.random().toString(36).slice(2),lastEvent='',sensorReady=false,armed=false,prevAcc=0,lastLaunch=0,remotePlaying=false;
